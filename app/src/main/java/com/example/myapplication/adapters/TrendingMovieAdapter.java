@@ -1,6 +1,5 @@
 package com.example.myapplication.adapters;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -37,7 +36,7 @@ public class TrendingMovieAdapter extends RecyclerView.Adapter<TrendingMovieAdap
     @NotNull
     @Override
     public MovieViewHolder onCreateViewHolder(@NonNull @NotNull ViewGroup parent, int viewType) {
-       View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.trending_movie_recycler,parent,false);
+       View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.trending_movie_layout,parent,false);
        return new MovieViewHolder(v);
     }
 
