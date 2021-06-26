@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="30dp"
+    app:cardElevation="0dp"
+    android:layout_marginRight="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp">
+            <ImageView
+                android:id="@+id/castImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:background="@drawable/user"/>
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/castNameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:textSize="22dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/castDepartmentTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Department"/>
+        <TextView
+            android:id="@+id/castCharacterTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="character"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

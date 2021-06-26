@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="20dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginLeft="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/nowMovieIV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/nowMovieName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="movieName"
+            android:layout_above="@+id/nowReleaseDate"
+            android:elevation="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/gradient_trans_toblack"
+            android:paddingLeft="20dp"
+            />
+        <TextView
+            android:id="@+id/nowReleaseDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="releaseDate"
+            android:layout_alignParentBottom="true"
+            android:elevation="20dp"
+            android:textColor="@color/white"
+            android:background="@color/black"
+            android:paddingLeft="20dp"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
