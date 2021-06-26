@@ -97,7 +97,7 @@ public class DetailActivity extends AppCompatActivity {
                 if(response.code() == 200){
                     List<MovieModel> similarMovieList = new ArrayList<>(response.body().getMovies());
                     similarMovieAdapter.setmMovieModel(similarMovieList);
-                    if (similarMovieList.size() <0){
+                    if (similarMovieList.size() <1){
                         TextView tv = findViewById(R.id.similarMovieTV);
                         tv.append(" N/A");
                     }
